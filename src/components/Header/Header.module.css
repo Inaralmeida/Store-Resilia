@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: 86px;
+  background-color: var(--preto);
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.container > h1 {
+  color: var(--primaria);
+}
+
+.container > nav {
+  width: 70%;
+  height: 100%;
+  background-color: var(--primaria);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-decoration: none;
+}

@@ -1,0 +1,85 @@
+.form {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 90%;
+  height: calc(100vh - 100px);
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+  background-color: #222;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 150px) 30px 50px;
+  grid-template-areas:
+    "img nome_completo  nome_completo"
+    "img url nome_abreviado "
+    "categoria marca  quantidade"
+    "cor preco  porcentagem_desconto"
+    "desc desc  desc"
+    "desc desc  desc"
+    "btns btns  btns";
+}
+
+.figure {
+  grid-area: img;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.figure > img {
+  width: 80%;
+}
+.descricao {
+  width: 100%;
+  height: 100%;
+  grid-area: desc;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: -50px;
+}
+.descricao > label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.descricao > textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  background-color: #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.buttons {
+  grid-area: btns;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.form :nth-child(2) {
+  grid-area: nome_completo;
+}
+.form :nth-child(3) {
+  grid-area: nome_abreviado;
+}
+.form :nth-child(4) {
+  grid-area: url;
+}
+.form :nth-child(5) {
+  grid-area: categoria;
+}
+.form :nth-child(6) {
+  grid-area: marca;
+}
+.form :nth-child(7) {
+  grid-area: quantidade;
+}
