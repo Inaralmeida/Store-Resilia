@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instancia = axios.create({
-  baseURL: "ttps://api-resilia-store.herokuapp.com",
+  baseURL: "https://api-resilia-store.herokuapp.com",
 });
 
 export const getProdutos = async () => {
